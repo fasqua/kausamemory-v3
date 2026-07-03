@@ -1,0 +1,19 @@
+[package]
+name = "kausamemory_head"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "kausamemory_head"
+
+[dependencies]
+anchor-lang = { version = "0.30", features = ["init-if-needed"] }
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
