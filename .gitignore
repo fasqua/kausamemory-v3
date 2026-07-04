@@ -35,3 +35,4 @@ venv/
 # OS / editor
 .DS_Store
 *.swp
+CONSOLE_PLAN.md
